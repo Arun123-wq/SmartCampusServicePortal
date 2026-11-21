@@ -1,0 +1,1 @@
+@model IEnumerable<ServiceRequest><h2>Track Requests</h2><form method="post"><input name="rollNo" class="form-control mb-2" placeholder="Roll number"/><button class="btn btn-primary">Track</button></form>@if(Model!=null){@await Html.PartialAsync("_Requests",Model)}

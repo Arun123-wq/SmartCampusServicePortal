@@ -1,0 +1,1 @@
+@model IEnumerable<Student><h2>Students</h2><a class="btn btn-primary mb-3" href="/Students/Register">Register Student</a><table class="table"><tr><th>Roll No</th><th>Name</th><th>Email</th><th>Department</th></tr>@foreach(var s in Model){<tr><td>@s.StudentIdNumber</td><td><a href="/Students/Details/@s.Id">@s.FullName</a></td><td>@s.Email</td><td>@s.Department</td></tr>}</table>

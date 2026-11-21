@@ -1,0 +1,1 @@
+@model Student<h2>@Model.FullName</h2><p>Roll No: @Model.StudentIdNumber</p><p>Email: @Model.Email</p><p>Phone: @Model.PhoneNumber</p><p>Department: @Model.Department</p><h4>Requests</h4>@await Html.PartialAsync("_Requests",(IEnumerable<ServiceRequest>)ViewBag.Requests)

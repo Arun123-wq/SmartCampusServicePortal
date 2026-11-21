@@ -1,0 +1,1 @@
+@model IEnumerable<ServiceRequest><h2>Student Dashboard</h2><form method="get"><input name="rollNo" placeholder="Roll number" class="form-control mb-2"/><button class="btn btn-primary">Find</button></form>@if(ViewBag.ErrorMessage!=null){<p class="text-danger">@ViewBag.ErrorMessage</p>}@if(Model!=null){@await Html.PartialAsync("_Requests",Model)}

@@ -1,0 +1,1 @@
+@model IEnumerable<ServiceRequest><table class="table table-striped"><tr><th>ID</th><th>Student</th><th>Roll No</th><th>Category</th><th>Status</th><th></th></tr>@foreach(var r in Model){<tr><td>@r.Id</td><td>@r.StudentName</td><td>@r.StudentRollNo</td><td>@r.Category</td><td>@r.Status</td><td><a href="/ServiceRequests/Details/@r.Id">Details</a></td></tr>}</table>
